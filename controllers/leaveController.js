@@ -106,7 +106,7 @@ HR Management System`;
                 <td style="padding: 10px; border-bottom: 1px solid #eee;"><span style="color: ${status === 'Approved' ? '#10b981' : '#ef4444'}; font-weight: bold;">${status}</span></td>
               </tr>
             </table>
-            <p style="margin-top: 20px;">You can check more details on your <a href="http://localhost:5173/user/leave-status">dashboard</a>.</p>
+            <p style="margin-top: 20px;">You can check more details on your <a href="${process.env.CLIENT_URL || 'http://localhost:5173'}/user/leave-status">dashboard</a>.</p>
             <p>Best regards,<br>HR Management System</p>
           </div>
         `,
